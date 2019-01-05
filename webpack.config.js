@@ -15,7 +15,15 @@ module.exports = {
     new CopyWebpackPlugin([
       {
         from: 'node_modules/bootstrap/dist/css/bootstrap.min.css'
-      } 
+      },
+      {
+        from: 'src/img/shoebill-illust.png'
+      },
+      {
+        from: 'node_modules/@fortawesome/fontawesome-free/js/all.min.js',
+        to: 'fontawesome-free.min.js',
+        toType: 'file'
+      },
     ])
   ],
   module: {
