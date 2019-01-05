@@ -9,10 +9,12 @@ export default class ArticlesPage extends React.Component {
     this.state = {
       articles: [
         {
+          id: 'idA',
           subject: 'subjectA',
           content: 'contentA'
         },
         {
+          id: 'idB',
           subject: 'subjectB',
           content: 'contentB'
         }
