@@ -4,6 +4,12 @@ Markdown Blog
 Markdown でブログを書けるアプリです。 
 React などの勉強のために車輪の再発明をします。
 
+## Milestone
+
+* v0.1  静的Webサーバー上のみで動作する Markdown で書けるブログツールを作成する ([詳細](https://github.com/teloo/markdown-blog/issues/1))
+* v0.2  オンプレミス環境上でサーバー側での記事の永続化と認証機能
+* v0.3  クラウド環境上でサーバーレスアーキテクチャで v0.2 と同等の機能を実現
+
 ## Installation
 
 ```shell
