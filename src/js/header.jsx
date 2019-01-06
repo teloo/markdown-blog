@@ -18,8 +18,7 @@ export default function Header(props) {
         <Form inline className="ml-auto">
           <LinkContainer to="/articles/new">
             <Button variant="primary" disabled={props.postButtonDisabled}>
-              <span className="fas fa-plus mr-2"/>
-              New Post
+              <span className="fas fa-plus"/>
             </Button>
           </LinkContainer>
         </Form>
