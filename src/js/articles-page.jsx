@@ -24,7 +24,7 @@ export default class ArticlesPage extends React.Component {
   render() {
     return (
       <div>
-        <Header />
+        <Header newArticleButtonDisplayed/>
         <Container fluid="true">
           <Articles articles={this.state.articles}/>
         </Container>

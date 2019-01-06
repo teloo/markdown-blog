@@ -5,6 +5,10 @@ import Navbar from 'react-bootstrap/lib/Navbar';
 import Form from 'react-bootstrap/lib/Form';
 import Button from 'react-bootstrap/lib/Button';
 
+const createNewArticleButtonClassValue = isDisplayed => {
+  return isDisplayed ? '' : 'd-none'
+};
+
 export default function Header(props) {
   return (
     <header>
@@ -17,7 +21,10 @@ export default function Header(props) {
         </LinkContainer>
         <Form inline className="ml-auto">
           <LinkContainer to="/articles/new">
-            <Button variant="primary" disabled={props.postButtonDisabled}>
+            <Button
+              variant="primary"
+              className={createNewArticleButtonClassValue(props.newArticleButtonDisplayed)}
+            >
               <span className="fas fa-plus"/>
             </Button>
           </LinkContainer>
@@ -28,5 +35,9 @@ export default function Header(props) {
 }
 
 Header.propTypes = {
-  postButtonDisabled: PropTypes.bool
+  newArticleButtonDisplayed: PropTypes.bool
+};
+
+Header.defaultProps = {
+  newArticleButtonDisplayed: false
 };

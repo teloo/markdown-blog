@@ -22,7 +22,7 @@ export default class ArticleEditorPage extends React.Component {
   render() {
     return (
       <div>
-        <Header postButtonDisabled/>
+        <Header/>
         <Container fluid="true">
           <Form>
             <FormGroup>
