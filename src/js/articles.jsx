@@ -4,7 +4,7 @@ import Article from './article.jsx';
 
 export default function Articles(props) {
   const articleElements = props.articles.map(a => (
-    <Article key={a.id} id={a.id} subject={a.subject} content={a.content}/>
+    <Article key={a.id} article={a}/>
   ));
   return <div>{articleElements}</div>;
 }
